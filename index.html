@@ -351,6 +351,23 @@
       opacity: 0;
     }
 
+    /* Logo circle */
+    .logo-circle {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid var(--gold);
+      opacity: 0;
+      animation: fadeUp 0.7s ease 0.1s both;
+      flex-shrink: 0;
+    }
+    .logo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     /* Animations */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(16px); }
@@ -389,6 +406,7 @@
   </header>
 
   <main>
+    <div class="logo-circle"><img src="TamiPizza_Pdp.png" alt="TamiPizza" /></div>
     <p class="eyebrow">Como, Italia — Il Progetto</p>
 
     <h1>Il futuro<br>della <em>Pizza.</em></h1>
